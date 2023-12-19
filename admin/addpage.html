@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adicionar Produto - New Way</title>
+
+    <link rel="stylesheet" href="addpage.css">
+</head>
+<body>
+    <div class="box">
+        <form name="form1" method="POST" enctype="multipart/form-data" action="adicionarproduto.php">
+            <fieldset>
+                <legend><b>Adicionar Produto</b></legend>
+                <br>
+                <div class="imagemform">
+                    <img src="../imgs/foto-logo-nw.png">
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="txtNome" id="nome" class="inputUser" required>
+                    <label class="labelInput">Nome do produto</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtDescricao" id="descricao" class="inputUser" required>
+                    <label class="labelInput">Descricao do produto</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtPreco" id="preco" class="inputUser" required>
+                    <label class="labelInput">Preço</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="file" name="file" id="imagem" class="inputUser" required>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" value="Cadastrar" id="bt">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
